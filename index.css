@@ -27,11 +27,12 @@ body, html {
     position: relative;
     top: 0;
     left: 0;
-    display: none;
+    z-index: 10; /* Sets all slides to initially have z-index of bottom*/
+    display: block;
 }
 
-.slide-1 {background: red;}
-.slide-2 {background: green;}
+.slide-1 {background: red; display: none;} /* Sets slide 1 to have z-index of top when the page loads*/
+.slide-2 {background: green; z-index: 13; opacity: 1;}
 .slide-3 {background: blue;}
 
 #slide-nav-span {
@@ -41,6 +42,7 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     align-items: center;
+    z-index: 13; /* Needs to be at least 13 to be above all that slideshow jank*/
 }
 
 .slide-nav {
