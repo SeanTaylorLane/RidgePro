@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#slide-span {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden; /* (The padding to center the nav circles causes a lot of white space that makes horizontal scrolling*/
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.slide-1 {background: red;}
+.slide-2 {background: green;}
+.slide-3 {background: blue;}
+
+#slide-nav-span {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+.slide-nav {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    display: inline-block;
+    margin: 0 5px;
+}
+
