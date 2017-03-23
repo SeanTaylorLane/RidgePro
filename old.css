@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -9,33 +11,32 @@ body, html {
     height: 100%;
 }
 
-#slide-container {
+#slide-container { /* The window the slides are shown through */
     width: 100%;
-    height: 70%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
     position: relative;
     top: 0;
     left: 0;
-    overflow: hidden;
+    overflow: scroll;
 }
 
-#slide-span {
-    position: absolute;
+#slide-span { /* All the slides put in one slider */
     width: 300%;
     height: 100%;
-    left: 0;
-    transition: left 2s;
 }
 
-.slide {
-    width: 33.3333333%; /* This shit is jank but it works... */
+.slide { /* All the slides */
+    width: 100%;
     height: 100%;
-    float: left;
+    position: absolute;
+    top: 0;
     display: inline-block;
 }
 
-.slide-1 {background: red;}
-.slide-2 {background: green;}
-.slide-3 {background: blue;}
+.slide-1 {background: red; left: 0;}
+.slide-2 {background: green; left: 100%;}
+.slide-3 {background: blue; left: 200%;}
 
 #slide-nav-span {
     position: absolute;
@@ -43,7 +44,6 @@ body, html {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    padding-bottom: 20px;
     align-items: center;
     z-index: 13; /* Needs to be at least 13 to be above all that slideshow jank*/
 }
@@ -55,14 +55,5 @@ body, html {
     background: white;
     display: inline-block;
     margin: 0 5px;
-    cursor: pointer;
-    box-shadow: 2px 2px 3px;
 }
 
-.slide-nav:hover {
-    background: darkgray;
-}
-
-.slide-nav:active {
-    background: dimgray;
-}

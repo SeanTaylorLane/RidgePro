@@ -4,11 +4,12 @@
     <link href="index.css" rel="stylesheet" type="text/css">
     <title>RP Slider</title>
     <meta charset="utf-8">
-    <!--VIEWPORT TAG?-->    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 </head>
 <body>
-    <div id="slide-span" onclick="nextSlide()">
-        
+    <div id="slide-container" onclick="changeSlide(100)" > <!-- This is the slider window. This window can be set to any size. Contains the full 300% width slideshow and the nav buttons -->
+    
+    <div id="slide-span"> <!-- The full 300% width slideshow -->
     <div class="slide slide-1">
         <h1>Slide One!</h1>
     </div>
@@ -18,15 +19,18 @@
     <div class="slide slide-3">
         <h1>Slide Three!</h1>
     </div>
+    </div>
         
-    <div id="slide-nav-span">
-    <div class="slide-nav nav1"></div>
-    <div class="slide-nav nav2"></div>
-    <div class="slide-nav nav3"></div>
+    <div id="slide-nav-span"> <!-- Container for the nav buttons -->
+    <div class="slide-nav nav1" onclick="changeSlide(2)"></div>
+    <div class="slide-nav nav2" onclick="changeSlide(0)"></div>
+    <div class="slide-nav nav3" onclick="changeSlide(1)"></div>
+    <!-- IDK WHY THE VALUES AREN'T CORRESPONDING TO THE SLIDE NUMBER!!-->
     </div>
     
     </div> <!-- </slide-span> -->
     
-    <script src="crossfade.js"></script>
+    <script src="horizontal.js"></script>
+    
 </body>
 </html>
