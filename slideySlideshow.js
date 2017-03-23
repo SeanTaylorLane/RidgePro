@@ -1,6 +1,8 @@
 var currentSlide = 0; // Slideshow starts off on slide 1
 var slideshow = document.getElementById("slide-span");
 console.log(slideshow);
+var slideNav = document.getElementsByClassName("slide-nav");
+slideNav[currentSlide].style.background = "slategray";
 
 /* ARGUMMENTS FOR changeSlide() FUNCTION 
 100: next slide
@@ -17,6 +19,7 @@ function changeSlide(arg) {
     switch (arg) {
         case 100:
             left = -((currentSlide + 1) * 100);
+            slideNav[currentSlide].style.background = "white";
             currentSlide++;
             if (left<=(0-300)) {
                 left=0;
@@ -26,6 +29,7 @@ function changeSlide(arg) {
         
         case 99:
             left = -((currentSlide - 1) * 100);
+            slideNav[currentSlide].style.background = "white";
             currentSlide--;
             if (left>0) {
                 left= 0-200;
@@ -36,6 +40,7 @@ function changeSlide(arg) {
     
     if ((arg>=0) && (arg<=2)) {
         left= -(arg*100);
+        slideNav[currentSlide].style.background = "white";
         currentSlide=arg;
     }
     
@@ -52,6 +57,7 @@ function changeSlide(arg) {
     }*/
     
     slideshow.style.left = left + "%";
+    slideNav[currentSlide].style.background = "slategray";
 }
 
-//-Math.abs(num);
+setInterval(changeSlide, 9000, 100);
