@@ -25,7 +25,7 @@ body, html {
     left: 0;
     -moz-transition: left 2s;
     -webkit-transition: left 2s;
-    transition: left 2s;
+    transition: left 1.5s;
 }
 
 .slide {
@@ -38,6 +38,45 @@ body, html {
 .slide-1 {background: red;}
 .slide-2 {background: green;}
 .slide-3 {background: blue;}
+
+#slide-left, #slide-right {
+    color: white;
+    font-size: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    transition: background 1s, left 1s, right 1s;
+}
+
+#slide-right:hover {
+    background: rgba(0,0,0,0.6);
+    right: -4px;
+}
+
+#slide-left:hover {
+    background: rgba(0,0,0,0.6);
+    left: -4px;
+}
+
+#slide-right {
+    right: -10px;
+}
+
+#slide-left {
+    left: -10px;
+    text-align: right;
+}
+
+#slide-right:active, #slide-left:active {
+    transition: background 0s;
+    background: rgba(0,0,0,0.8);
+}
 
 #slide-nav-span {
     position: absolute;

@@ -1,6 +1,5 @@
 var currentSlide = 0; // Slideshow starts off on slide 1
 var slideshow = document.getElementById("slide-span");
-console.log(slideshow);
 var slideNav = document.getElementsByClassName("slide-nav");
 slideNav[currentSlide].style.background = "slategray";
 
@@ -60,4 +59,4 @@ function changeSlide(arg) {
     slideNav[currentSlide].style.background = "slategray";
 }
 
-setInterval(changeSlide, 9000, 100);
+//setInterval(changeSlide, 9000, 100);

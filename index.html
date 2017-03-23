@@ -7,7 +7,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 </head>
 <body>
-    <div id="slide-container" onclick="changeSlide(100)" > <!-- This is the slider window. This window can be set to any size. Contains the full 300% width slideshow and the nav buttons -->
+    <div id="slide-container"> <!-- This is the slider window. This window can be set to any size. Contains the full 300% width slideshow and the nav buttons -->
     
     <div id="slide-span"> <!-- The full 300% width slideshow -->
     <div class="slide slide-1">
@@ -21,6 +21,9 @@
     </div>
     </div> <!-- </slide-span> -->
         
+    <span id="slide-left" onclick="changeSlide(99)">&#10094</span>
+    <span id="slide-right" onclick="changeSlide(100)">&#10095</span>
+        
     <div id="slide-nav-span"> <!-- Container for the nav buttons -->
     <div class="slide-nav" onclick="changeSlide(2)"></div>
     <div class="slide-nav" onclick="changeSlide(0)"></div>
@@ -28,7 +31,7 @@
     <!-- IDK WHY THE VALUES AREN'T CORRESPONDING TO THE SLIDE NUMBER!!-->
     </div>
     
-    </div> <!-- </slide-span> -->
+    </div> <!-- </slide-container> -->
     
     <script src="slideySlideshow.js"></script>
     
