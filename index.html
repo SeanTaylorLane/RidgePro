@@ -2,12 +2,36 @@
 <html lang="en">
 <head>
     <link href="index.css" rel="stylesheet" type="text/css">
-    <title>RP Slider</title>
+    <title>Ridge Pro</title>
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 </head>
 <body>
+    
+    
+    <nav class="menu">
+        <ul class="menu__list">
+        <li class="menu__home">
+            <a class="menu__link" id="ridgepro-words"><span class="menu__link--bold">Ridge</span>Pro</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link">About</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link">Work</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link">Events</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link">Contact</a>
+        </li>
+        </ul>
+    </nav>z-index
+    
+    <div id="notmenu">
+    
     <div id="slide-container"> <!-- This is the slider window. This window can be set to any size. Contains the full 300% width slideshow and the nav buttons -->
     
     <div id="slide-span"> <!-- The full 300% width slideshow -->
@@ -33,7 +57,32 @@
     
     </div> <!-- </slide-container> -->
     
-    <script src="slideySlideshow.js"></script>
+    <div class="flex-container--medium">
+        <div class="row1--join">
+        </div>
+        <div class="row1--about">
+        </div>
+    </div>
+        
+    <div class="flex-container--large">
+        <div class="row2--work">
+        </div>
+    </div>
+        
+    <div class="flex-container--medium">
+        <div class="row3--events">
+        </div>
+        <div class="row3--contact">
+        </div>
+    </div>
+        
+    <footer>&copy; Ridge Productions 2017</footer>
     
+    </div> <!-- </notmenu> -->
+    
+    
+    <script src="slideySlideshow.js"></script>
+    <script src="positionFixed.js"></script>
+    <script>menuFix();</script>        
 </body>
 </html>
