@@ -77,7 +77,7 @@ body {
 }
 
 #ridgepro-words { /* Making just the "Ridge Pro" bigger than the rest of the menu */
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .menu__link--bold { /* Making "Ridge" bold */
