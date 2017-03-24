@@ -239,12 +239,12 @@ h1 {
 }
 
 .row3--events {
-    flex: 1;
+    flex: 2;
     margin-right: 30px;
 }
 
 .row3--contact {
-    flex: 2;
+    flex: 1;
 }
 
 footer {
