@@ -11,13 +11,13 @@ body, html {
 }
 
 body {
-    background: white;
+    background: #F5F5F5;
 /*    background: url("pixel_weave.png");*/
 }
 
 .menu {
     width: 100%;
-    background: #F5F5F5;
+    background: white;
     padding: 3px 10px;
     position: fixed;
     z-index: 1000;
@@ -223,7 +223,7 @@ h1 {
     height: 100%;
     border-radius: 7px;
     box-shadow: 2px 2px 7px;
-    background: #F5F5F5;
+    background: white;
 }
 
 .row1--about {
