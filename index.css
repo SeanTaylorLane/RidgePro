@@ -1,89 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-}
-
-body, html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    background: #F5F5F5;
-/*    background: url("pixel_weave.png");*/
-}
-
-.menu {
-    width: 100%;
-    background: white;
-    padding: 3px 10px;
-    position: fixed;
-    z-index: 1000;
-    box-shadow: 2px 2px 4px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.menu__list {
-    display: -webkit-flex;
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    list-style: none;
-}
-
-.menu__item { /* All the menu items besides "Ridge Pro" */
-    font-size: 25px;
-    font-weight: 100;
-    text-transform: uppercase;
-    margin-right: 30px;
-    cursor: pointer;
-    padding-bottom: 3px;
-    transition: color .2s;
-}
-
-.menu__home { /* (the RidgePro logo) */
-    text-transform: uppercase;
-    margin-right: 30px;
-    cursor: pointer;
-    font-weight: 100;
-}
-
-.menu__item:hover {
-    color: slategray;
-}
-
-.menu__item:active {
-    border-bottom: 1px solid slategray;
-}
-
-.menu__item:focus { /* Needs javascript! */
-    border-bottom: 1px solid slategray;
-    color: slategray; /* To ensure it looks like it's active state as the browser loads the next page */
-}
-
-.menu__item--current {
-    border-bottom: 1px solid slategray;
-    color: slategray;
-}
-
-#ridgepro-words { /* Making just the "Ridge Pro" bigger than the rest of the menu */
-    font-size: 60px;
-}
-
-.menu__link--bold { /* Making "Ridge" bold */
-    font-weight: 400;
-}
-
 #notmenu { /* Everything that isn't in the fixed menu */
     width: 97%;
     position: relative;
@@ -120,9 +34,9 @@ body {
     justify-content: center;
 }
 
-.slide-1 {background: url("zine.jpg"); background-size: cover; background-position: center;}
-.slide-2 {background: url("mrridge.jpg"); background-size: cover; background-position: center right;}
-.slide-3 {background: url("va.jpg"); background-size: cover; background-position: center bottom;}
+.slide-1 {background: url("zine-min.jpg"); background-size: cover; background-position: center;}
+.slide-2 {background: url("mrridge-min.jpg"); background-size: cover; background-position: center right;}
+.slide-3 {background: url("va-min.jpg"); background-size: cover; background-position: center bottom;}
 
 h1 {
     text-transform: uppercase;

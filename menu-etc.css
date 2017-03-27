@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #F5F5F5;
+/*    background: url("pixel_weave.png");*/
+}
+
+.menu {
+    width: 100%;
+    background: white;
+    padding: 3px 10px;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 2px 2px 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu__list {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    list-style: none;
+}
+
+.menu__item { /* All the menu items besides "Ridge Pro" */
+    margin-right: 30px;
+    padding-bottom: 3px;
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+.menu__home { /* (the RidgePro logo) */
+    text-transform: uppercase;
+    margin-right: 30px;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.menu__link:link, .menu__link--home:link {
+    text-decoration: none;
+    color: black;
+}
+
+.menu__link:visited, .menu__link--home:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.menu__link:hover {
+    color: slategray;
+}
+
+.menu__link:focus { /* Needs javascript! */
+    border-bottom: 1px solid slategray;
+    color: slategray; /* To ensure it looks like it's active state as the browser loads the next page */
+}
+
+.menu__link:active {
+    border-bottom: 1px solid slategray;
+}
+
+.menu__link--current:link, .menu__link--current:visited {
+    border-bottom: 1px solid slategray;
+    color: slategray;
+}
+
+#ridgepro-words { /* Making just the "Ridge Pro" bigger than the rest of the menu */
+    font-size: 60px;
+}
+
+.menu__link--bold { /* Making "Ridge" bold */
+    font-weight: 400;
+}

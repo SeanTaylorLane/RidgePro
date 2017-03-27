@@ -1,0 +1,57 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+    <link href="menu-etc.css" rel="stylesheet" type="text/css">
+    <link href="about.css" rel="stylesheet" type="text/css">
+    <title>Ridge Pro</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <nav class="menu">
+        <ul class="menu__list">
+        <li class="menu__home">
+            <a class="menu__link--home" id="ridgepro-words" href="index.html"><span class="menu__link--bold">Ridge</span>Pro</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link menu__link--current" href="about.html">About</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="work.html">Work</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="events.html">Events</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+        </li>
+        </ul>
+    </nav>z-index <!-- WTF WTF WTF THE MARGIN GOES CRAZY WITHOUT THIS??? -->
+    
+    <div id="notmenu">
+    
+    <!-- Row 1 (About Us) -->
+    <h1><span class="header--bold">About</span>Us</h1>
+    <div class="card__about"></div>
+
+    <!-- Row 2 (Join Us) -->
+    <h1><span class="header--bold">Join</span>Us</h1>
+    <div class="card__join"></div>
+
+
+    <!-- Row 3 (Our Officers) -->
+    <h1><span class="header--bold">Our</span>Officers</h1>
+    <div class="card__officers"></div>
+    
+        
+    <footer>&copy; Ridge Productions 2017</footer>
+    
+    </div> <!-- </notmenu> -->
+    
+    <script src="positionFixed.js"></script>
+    <script>menuFix();</script>        
+</body>
+</html>
