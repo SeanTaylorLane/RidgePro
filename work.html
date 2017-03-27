@@ -1,0 +1,96 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+    <link href="menu-etc.css" rel="stylesheet" type="text/css">
+    <link href="work.css" rel="stylesheet" type="text/css">
+    <title>Ridge Pro</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <nav class="menu">
+        <ul class="menu__list">
+        <li class="menu__home">
+            <a class="menu__link--home" id="ridgepro-words" href="index.html"><span class="menu__link--bold">Ridge</span>Pro</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="about.html">About</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link menu__link--current" href="work.html">Work</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="events.html">Events</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+        </li>
+        </ul>
+    </nav>z-index <!-- WTF WTF WTF THE MARGIN GOES CRAZY WITHOUT THIS??? -->
+    
+    <div id="notmenu">
+    
+    <h1><span class="header--bold">Our</span>Work</h1>
+    <div id="container">
+        
+    <div class="masonryImage">
+        <img src="scratch/08.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/zine-min.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/mrridge-min.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/va-min.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/27995450833_ffcbddf9b2_o.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/28545229316_86f78277a0_o.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/28991324590_f31e7df90c_o.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/30243932191_f740a5fb01_o.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/bhavik-sax-light-painting-2.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/DSC9073.jpg">
+    </div>
+    <div class="masonryImage">
+        <img src="scratch/DSC9128.jpg">
+    </div>
+        
+    </div> <!-- </container> -->
+    
+    <footer>&copy; Ridge Productions 2017</footer>
+    
+    </div> <!-- </notmenu> -->
+    
+    <script src="positionFixed.js"></script>
+    <script>menuFix();</script>
+    <script src="jquery-3.2.0.min.js"></script>
+    <script src="masonry.pkgd.min.js"></script>
+    <script>
+    $(function(){
+ 
+    var $container = $('#container');
+  
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '.masonryImage'
+      });
+    });
+  
+  });</script>
+</body>
+</html>
