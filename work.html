@@ -222,12 +222,25 @@
     <script src="jquery-3.2.0.min.js"></script>
     <script src="masonry.pkgd.min.js"></script>
     <script>
-    $('.grid-container').masonry({
-  // options
+        
+var $grid = $('.grid-container').masonry({
+  // options...
   itemSelector: '.masonryImage',
   columnWidth: '.grid-sizer',
   percentPosition: true
 });
+        
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
+        
+   /* $('.grid-container').masonry({
+  // options
+  itemSelector: '.masonryImage',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});*/
     </script>
 </body>
 </html>
