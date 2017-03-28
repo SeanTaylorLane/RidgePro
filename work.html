@@ -235,6 +235,14 @@
   $grid.masonry('layout');
 });*/
         
+              
+   $('.grid-container').masonry({
+  // options
+  itemSelector: '.masonryImage',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+        
    var $grid = $('.grid-container').imagesLoaded( function() {
   // init Masonry after all images have loaded
   $grid.masonry({
@@ -243,6 +251,8 @@
   columnWidth: '.grid-sizer',
   percentPosition: true
   });
+  $grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout'); })
 });
         
    /* $('.grid-container').masonry({
