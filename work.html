@@ -221,38 +221,19 @@
     <script>menuFix();</script>
     <script src="jquery-3.2.0.min.js"></script>
     <script src="masonry.pkgd.min.js"></script>
+    <script src="imagesloaded.pkgd.min.js"></script>
     <script>
         
-/*var $grid = $('.grid-container').masonry({
+  var $grid = $('.grid-container').masonry({
   // options...
-  itemSelector: '.masonryImage',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});*/
-        
-// layout Masonry after each image loads
-/*$grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});*/
-        
-              
-   $('.grid-container').masonry({
-  // options
   itemSelector: '.masonryImage',
   columnWidth: '.grid-sizer',
   percentPosition: true
 });
         
-   var $grid = $('.grid-container').imagesLoaded( function() {
-  // init Masonry after all images have loaded
-  $grid.masonry({
-    // options...
-  itemSelector: '.masonryImage',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-  });
+// layout Masonry after each image loads
   $grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout'); })
+  $grid.masonry('layout');
 });
         
    /* $('.grid-container').masonry({
