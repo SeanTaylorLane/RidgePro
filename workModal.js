@@ -1,6 +1,14 @@
-function showModal() {
+function showModal(index) {
     var modal = document.getElementById("modal");
     var modalImage = document.getElementById("modal__image");
+    var header = document.getElementById("modal__header");
+    var alt;
+    var images = document.getElementsByClassName("modalImg");
+    
+    modalImage.src = images[index].src;
+    alt = images[index].alt;
+    header.innerHTML = alt;
+    
     
     modal.style.display = "block";
 //    modal.style.background = "rgba(0,0,0,0.8);"
@@ -16,5 +24,5 @@ function closeModal() {
 //    modalImage.style.transform = "scale(1,1)";
     modal.style.background = "rgba(0,0,0,0)";
     modal.style.opacity = "0";
-    setTimeout(function() {modal.style.display = "none";}, 1000);
+    setTimeout(function() {modal.style.display = "none";}, 600);
 }

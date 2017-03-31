@@ -31,19 +31,20 @@
         </ul>
     </nav>z-index <!-- WTF WTF WTF THE MARGIN GOES CRAZY WITHOUT THIS??? -->
     
+    <div id="modal" style="background: rgba(0,0,0,0);"> <!-- Modal container and modal background-->
+        <span class="modal__exit" onclick="closeModal()">&times;</span>
+        <img id="modal__image" src="">
+            <div class="modal__text">
+                <h2 id="modal__header"></h2>
+                <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- </modal__text> -->
+    </div> <!-- </modal> -->
+    
     <div id="notmenu">
     
     <h1><span class="header--bold">Our</span>Work</h1>
     <div class="card">
-        
-    <div id="modal" style="background: rgba(0,0,0,0);"> <!-- Modal container and modal background-->
-        <span class="modal__exit" onclick="closeModal()">&times;</span>
-        <img id="modal__image" src="work/1.jpg">
-            <div class="modal__text">
-                <h2 id="modal__header">Lorum Ipsum</h2>
-                <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div> <!-- </modal__text> -->
-    </div> <!-- </modal> -->
+
     <ul class="year">
         <li class="year__item"><a href="#" class="year__link" id="year--current">2017</a></li>
         <li class="year__item"><a href="#" class="year__link">2016</a></li>
@@ -53,169 +54,169 @@
     <div class="grid-container">
     <div class="grid-sizer"></div>
     <div class="masonryImage">
-        <img src="work/1.jpg" id="modalTrigger" alt="Lorum Ipsum" onclick="showModal()">
+        <img src="work/1.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(0)" id="modalTrigger">
     </div>
     <div class="masonryImage">
-        <img src="work/2.jpg" alt="Lorum Ipsum">
+        <img src="work/2.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(1)">
     </div>
     <div class="masonryImage">
-        <img src="work/3.jpg">
+        <img src="work/3.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(2)">
     </div>
     <div class="masonryImage">
-        <img src="work/4.jpg">
+        <img src="work/4.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(3)">
     </div>
     <div class="masonryImage">
-        <img src="work/5.jpg">
+        <img src="work/5.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(4)">
     </div>
     <div class="masonryImage">
-        <img src="work/6.jpg">
+        <img src="work/6.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(5)">
     </div>
     <div class="masonryImage">
-        <img src="work/7.jpg">
+        <img src="work/7.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(6)">
     </div>
     <div class="masonryImage">
-        <img src="work/8.jpg">
+        <img src="work/8.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(7)">
     </div>
     <div class="masonryImage">
-        <img src="work/9.jpg">
+        <img src="work/9.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(8)">
     </div>
     <div class="masonryImage">
-        <img src="work/10.jpg">
+        <img src="work/10.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(9)">
     </div>
     <div class="masonryImage">
-        <img src="work/11.jpg">
+        <img src="work/11.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(10)">
     </div>
       <div class="masonryImage">
-        <img src="work/12.jpg">
+        <img src="work/12.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(11)">
     </div>
       <div class="masonryImage">
-        <img src="work/13.jpg">
+        <img src="work/13.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(12)">
     </div>
       <div class="masonryImage">
-        <img src="work/14.jpg">
+        <img src="work/14.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(13)">
     </div>
       <div class="masonryImage">
-        <img src="work/15.jpg">
+        <img src="work/15.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(14)">
     </div>
       <div class="masonryImage">
-        <img src="work/16.jpg">
+        <img src="work/16.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(15)">
     </div>
       <div class="masonryImage">
-        <img src="work/17.jpg">
+        <img src="work/17.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(16)">
     </div>
       <div class="masonryImage">
-        <img src="work/18.jpg">
+        <img src="work/18.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(17)">
     </div>
       <div class="masonryImage">
-        <img src="work/19.jpg">
+        <img src="work/19.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(18)">
     </div>
       <div class="masonryImage">
-        <img src="work/20.jpg">
+        <img src="work/20.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(19)">
     </div>
       <div class="masonryImage">
-        <img src="work/21.jpg">
+        <img src="work/21.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(20)">
     </div>
      <div class="masonryImage">
-         <img src="work/22.jpg">
+         <img src="work/22.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(21)">
     </div>
     <div class="masonryImage">
-        <img src="work/23.jpg">
+        <img src="work/23.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(22)">
     </div>
     <div class="masonryImage">
-        <img src="work/24.jpg">
+        <img src="work/24.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(23)">
     </div>
     <div class="masonryImage">
-        <img src="work/25.jpg">
+        <img src="work/25.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(24)">
     </div>
     <div class="masonryImage">
-        <img src="work/26.jpg">
+        <img src="work/26.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(25)">
     </div>
     <div class="masonryImage">
-        <img src="work/27.jpg">
+        <img src="work/27.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(26)">
     </div>
     <div class="masonryImage">
-        <img src="work/28.jpg">
+        <img src="work/28.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(27)">
     </div>
     <div class="masonryImage">
-        <img src="work/29.jpg">
+        <img src="work/29.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(28)">
     </div>
     <div class="masonryImage">
-        <img src="work/30.jpg">
+        <img src="work/30.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(29)">
     </div>
     <div class="masonryImage">
-        <img src="work/31.jpg">
+        <img src="work/31.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(30)">
     </div>
     <div class="masonryImage">
-        <img src="work/32.jpg">
+        <img src="work/32.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(31)">
     </div>
       <div class="masonryImage">
-        <img src="work/33.jpg">
+        <img src="work/33.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(32)">
     </div>
       <div class="masonryImage">
-        <img src="work/34.jpg">
+        <img src="work/34.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(33)">
     </div>
       <div class="masonryImage">
-        <img src="work/35.jpg">
+        <img src="work/35.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(34)">
     </div>
       <div class="masonryImage">
-        <img src="work/36.jpg">
+        <img src="work/36.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(35)">
     </div>
       <div class="masonryImage">
-        <img src="work/37.jpg">
+        <img src="work/37.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(36)">
     </div>
       <div class="masonryImage">
-        <img src="work/38.jpg">
+        <img src="work/38.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(37)">
     </div>
       <div class="masonryImage">
-        <img src="work/39.jpg">
+        <img src="work/39.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(38)">
     </div>
       <div class="masonryImage">
-        <img src="work/40.jpg">
+        <img src="work/40.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(39)">
     </div>
       <div class="masonryImage">
-        <img src="work/41.jpg">
+        <img src="work/41.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(40)">
     </div>
       <div class="masonryImage">
-        <img src="work/42.jpg">
+        <img src="work/42.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(41)">
     </div>
         <div class="masonryImage">
-        <img src="work/43.jpg">
+        <img src="work/43.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(42)">
         </div>
     <div class="masonryImage">
-        <img src="work/44.jpg">
+        <img src="work/44.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(43)">
     </div>
     <div class="masonryImage">
-        <img src="work/45.jpg">
+        <img src="work/45.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(44)">
     </div>
     <div class="masonryImage">
-        <img src="work/46.jpg">
+        <img src="work/46.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(45)">
     </div>
     <div class="masonryImage">
-        <img src="work/47.jpg">
+        <img src="work/47.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(46)">
     </div>
       <div class="masonryImage">
-        <img src="work/48.jpg">
+        <img src="work/48.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(47)">
     </div>
       <div class="masonryImage">
-        <img src="work/49.jpg">
+        <img src="work/49.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(48)">
     </div>
       <div class="masonryImage">
-        <img src="work/50.jpg">
+        <img src="work/50.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(49)">
     </div>
       <div class="masonryImage">
-        <img src="work/51.jpg">
+        <img src="work/51.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(50)">
     </div>
       <div class="masonryImage">
-        <img src="work/52.jpg">
+        <img src="work/52.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(51)">
     </div>
       <div class="masonryImage">
-        <img src="work/53.jpg">
+        <img src="work/53.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(52)">
     </div>
       <div class="masonryImage">
-        <img src="work/54.jpg">
+        <img src="work/54.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(53)">
     </div>
       <div class="masonryImage">
-        <img src="work/55.jpg">
+        <img src="work/55.jpg" class="modalImg" alt="Lorum Ipsum" onclick="showModal(54)">
         </div>
        
     </div> <!-- </grid__container> -->
