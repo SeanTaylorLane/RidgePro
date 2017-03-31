@@ -36,6 +36,14 @@
     <h1><span class="header--bold">Our</span>Work</h1>
     <div class="card">
         
+    <div id="modal" style="background: rgba(0,0,0,0);"> <!-- Modal container and modal background-->
+        <span class="modal__exit" onclick="closeModal()">&times;</span>
+        <img id="modal__image" src="work/1.jpg">
+            <div class="modal__text">
+                <h2 id="modal__header">Lorum Ipsum</h2>
+                <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- </modal__text> -->
+    </div> <!-- </modal> -->
     <ul class="year">
         <li class="year__item"><a href="#" class="year__link" id="year--current">2017</a></li>
         <li class="year__item"><a href="#" class="year__link">2016</a></li>
@@ -45,10 +53,10 @@
     <div class="grid-container">
     <div class="grid-sizer"></div>
     <div class="masonryImage">
-        <img src="work/1.jpg">
+        <img src="work/1.jpg" id="modalTrigger" alt="Lorum Ipsum" onclick="showModal()">
     </div>
     <div class="masonryImage">
-        <img src="work/2.jpg">
+        <img src="work/2.jpg" alt="Lorum Ipsum">
     </div>
     <div class="masonryImage">
         <img src="work/3.jpg">
@@ -219,10 +227,11 @@
     
     <script src="positionFixed.js"></script>
     <script>menuFix();</script>
+    <script src="workModal.js"></script>
     <script src="jquery-3.2.0.min.js"></script>
     <script src="masonry.pkgd.min.js"></script>
     <script src="imagesloaded.pkgd.min.js"></script>
-    <script>
+    <script> // MASONRY STUFF
         
   var $grid = $('.grid-container').masonry({
   // options...
@@ -235,13 +244,6 @@
   $grid.imagesLoaded().progress( function() {
   $grid.masonry('layout');
 });
-        
-   /* $('.grid-container').masonry({
-  // options
-  itemSelector: '.masonryImage',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});*/
-    </script>
+    </script> <!-- End masonry stuff -->
 </body>
 </html>
