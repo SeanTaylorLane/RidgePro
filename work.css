@@ -90,7 +90,7 @@ a.year__link:link, a.year__link:visited {
 }
 
 a.year__link:hover {
-    color: slategray;
+    color: #515a62;
 }
 
 a.year__link:active { /* Put in a.year__link:focus when you put in other pages that you load to */
@@ -98,7 +98,7 @@ a.year__link:active { /* Put in a.year__link:focus when you put in other pages t
 }
 
 #year--current { /* Has to be an ID because a.year__link:link is more specific than a.year--current */
-    color: slategray;
+    color: #515a62;
     border-bottom: 1px solid slategray;
 }
 

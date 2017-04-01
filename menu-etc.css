@@ -69,12 +69,12 @@ body {
 }
 
 .menu__link:hover {
-    color: slategray;
+    color: #515a62;
 }
 
 .menu__link:focus { /* Needs javascript! */
     border-bottom: 1px solid slategray;
-    color: slategray; /* To ensure it looks like it's active state as the browser loads the next page */
+    color: #515a62; /* To ensure it looks like it's active state as the browser loads the next page */
 }
 
 .menu__link:active {
@@ -83,7 +83,7 @@ body {
 
 .menu__link--current:link, .menu__link--current:visited {
     border-bottom: 1px solid slategray;
-    color: slategray;
+    color: #515a62;
 }
 
 #ridgepro-words { /* Making just the "Ridge Pro" bigger than the rest of the menu */
