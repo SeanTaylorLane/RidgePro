@@ -1,3 +1,5 @@
+/* This CSS document is mostly ruled chronologically, in order with the appearance of elements in the HTML */
+
 * {
     margin: 0;
     padding: 0;
@@ -92,4 +94,36 @@ body {
 
 .menu__link--bold { /* Making "Ridge" bold */
     font-weight: 400;
+}
+
+#notmenu { /* Everything that isn't in the fixed menu */
+    width: 97%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.header--bold {
+    font-weight: 400;
+}
+
+.card {
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px;
+    background: white;
+    padding-top: 20px; /* This should be the same on all other pages (besides home page) */
+}
+
+footer {
+    color: slategray;
+    font-size: 16px;
+    line-height: .5;
+    margin-top: 20px;
 }
