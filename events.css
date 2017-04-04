@@ -1,3 +1,38 @@
-.card {
-    height: 50%;
+.grid__container {
+    width: 100%;
+    height: auto;
 }
+
+.event {
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px;
+    background: white;
+    display: inline-block;
+    position: relative;
+}
+
+.event div {
+    width: 150px;
+    height: 150px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 25%;
+    left: 25%; /* top and left centers the div inside the .event element because we KNOW that the div will be the .event element scaled by 0.5 */
+    text-align: center;
+    padding-top: 25%; /* To vertically center the text inside the div. Is 25% because the percentage is referring to the parent of this element, the .event element, so that it is actualy 50% of the div */
+    border-radius: 2px;
+}
+
+.event h2 {
+    font-weight: 100;
+    color: white;
+/*    background: rgba(255, 0,0,0.5);*/
+    transform: translateY(-50%); /* To complete centering the text inside the div */
+}
+
+.event__1 {background: blueviolet;}
+.event__2 {background: cornflowerblue;}
+.event__3 {background: lawngreen;}
+.event__4 {background: orangered;}
