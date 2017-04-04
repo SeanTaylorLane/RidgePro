@@ -1,27 +1,35 @@
 .grid__container {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .event {
-    width: 300px;
-    height: 300px;
+    width: 22%;
+    padding-top: 22%;
+    min-width: 230px;
+    min-height: 230px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 7px;
     box-shadow: 2px 2px 7px;
     background: white;
     display: inline-block;
     position: relative;
+    cursor: pointer;
+    margin: 1%;
+    font-size: 24px;
 }
 
 .event div {
-    width: 150px;
-    height: 150px;
+    width: 75%;
+    height: 75%;
     background: rgba(0,0,0,0.5);
     position: absolute;
-    top: 25%;
-    left: 25%; /* top and left centers the div inside the .event element because we KNOW that the div will be the .event element scaled by 0.5 */
+    top: 12.5%;
+    left: 12.5%; /* top and left centers the div inside the .event element because we KNOW that the div will be the .event element scaled by 0.5 */
     text-align: center;
-    padding-top: 25%; /* To vertically center the text inside the div. Is 25% because the percentage is referring to the parent of this element, the .event element, so that it is actualy 50% of the div */
+    padding-top: 37.5%; /* To vertically center the text inside the div. Is 37.5% because the percentage is referring to the parent of this element, the .event element, so that it is actualy 50% of the div which is 75% of the .event */
     border-radius: 2px;
 }
 
