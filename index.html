@@ -9,41 +9,49 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 </head>
 <body>
+    <header>
+    <a class="header__home"><span class="header--bold">Ridge</span>Pro</a>
+    <ul class="headernav__list">
+        <li class="headernav__item"><a class="headernav__link" href="about.html">About</a></li>
+        <li class="headernav__item"><a class="headernav__link" href="work.html">Work</a></li>
+        <li class="headernav__item"><a class="headernav__link" href="events.html">Events</a></li>
+        <li class="headernav__item"><a class="headernav__link" href=contact.html>Contact</a></li>
+    </ul>
+    </header>
     
-    
-    <nav class="menu">
-        <ul class="menu__list">
-        <li class="menu__home">
-            <a class="menu__link--home" id="ridgepro-words" href="index.html"><span class="menu__link--bold">Ridge</span>Pro</a>
+    <nav class="nav">
+        <ul class="nav__list">
+        <li class="nav__home">
+            <a class="nav__link--home" id="ridgepro-words" href="index.html"><span class="nav__link--bold">Ridge</span>Pro</a>
         </li>
-        <li class="menu__item">
-            <a class="menu__link" href="about.html">About</a>
+        <li class="nav__item">
+            <a class="nav__link" href="about.html">About</a>
         </li>
-        <li class="menu__item">
-            <a class="menu__link" href="work.html">Work</a>
+        <li class="nav__item">
+            <a class="nav__link" href="work.html">Work</a>
         </li>
-        <li class="menu__item">
-            <a class="menu__link" href="events.html">Events</a>
+        <li class="nav__item">
+            <a class="nav__link" href="events.html">Events</a>
         </li>
-        <li class="menu__item">
-            <a class="menu__link" href="contact.html">Contact</a>
+        <li class="nav__item">
+            <a class="nav__link" href="contact.html">Contact</a>
         </li>
         </ul>
-    </nav>z-index <!-- WTF WTF WTF THE MARGIN GOES CRAZY WITHOUT THIS??? -->
+    </nav>
     
-    <div id="notmenu">
+    <div id="content">
     
     <div id="slide-container"> <!-- This is the slider window. This window can be set to any size. Contains the full 300% width slideshow and the nav buttons -->
     
     <div id="slide-span"> <!-- The full 300% width slideshow -->
     <div class="slide slide-1">
-        <h1>Slide One!</h1>
+        <h2>Slide One!</h2>
     </div>
     <div class="slide slide-2">
-        <h1>Slide Two!</h1>
+        <h2>Slide Two!</h2>
     </div>
     <div class="slide slide-3">
-        <h1>Slide Three!</h1>
+        <h2>Slide Three!</h2>
     </div>
     </div> <!-- </slide-span> -->
         
@@ -82,10 +90,9 @@
         
     <footer>&copy; Ridge Productions 2017</footer>
     
-    </div> <!-- </notmenu> -->
+    </div> <!-- </content> -->
     
     
     <script src="slideySlideshow.js"></script>
-    <script src="positionFixed.js"></script>
 </body>
 </html>

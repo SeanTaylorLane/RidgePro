@@ -17,7 +17,61 @@ body {
 /*    background: url("pixel_weave.png");*/
 }
 
-.menu {
+header {
+    font-weight: 100;
+    font-size: 40px;
+    text-transform: uppercase;
+/*    border: solid 1px rgba(0,0,0,0.5);*/
+    margin: 0 1.5%; /* The bottom margin of this collapses with the top margin of #content to be 20px. The side margins center this and makes the width 97%, aligned with content */
+    text-align: center;
+}
+
+.header__home {
+    font-size: 140px;
+}
+
+.header--bold {
+    font-weight: 400;
+}
+
+.headernav__list {
+/*    border: solid 1px rgba(255,0,0,0.5);*/
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.headernav__item {
+    display: inline-block;
+    list-style: outside none none; /* Should look into this and start using! */
+/*    border: solid 1px rgba(0,0,0,0.5);*/
+}
+
+.headernav__link {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.headernav__list a:before {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    bottom: 0;
+    display: block;
+    width: 0%;
+    height: 2px;
+    content: "";
+    background-color: black;
+}
+
+.headernav__list a:hover:before {
+    opacity: 1;
+    width: 100%;
+}
+
+nav {
     width: 100%;
     background: white;
     padding: 3px 10px;
@@ -35,7 +89,7 @@ body {
     justify-content: flex-start;
 }
 
-.menu__list {
+.nav__list {
     display: -webkit-flex;
     display: flex;
     justify-content: flex-start;
@@ -43,7 +97,7 @@ body {
     list-style: none;
 }
 
-.menu__item { /* All the menu items besides "Ridge Pro" */
+.nav__item { /* All the nav items besides "Ridge Pro" */
     margin-right: 30px;
     padding-bottom: 3px;
     font-size: 25px;
@@ -53,64 +107,60 @@ body {
     transition: color .2s;
 }
 
-.menu__home { /* (the RidgePro logo) */
+.nav__home { /* (the RidgePro logo) */
     text-transform: uppercase;
     margin-right: 30px;
     cursor: pointer;
     font-weight: 100;
 }
 
-.menu__link:link, .menu__link--home:link {
+.nav__link:link, .nav__link--home:link {
     text-decoration: none;
     color: black;
 }
 
-.menu__link:visited, .menu__link--home:visited {
+.nav__link:visited, .nav__link--home:visited {
     text-decoration: none;
     color: black;
 }
 
-.menu__link:hover {
+.nav__link:hover {
     color: #515a62;
 }
 
-.menu__link:focus { /* Needs javascript! */
+.nav__link:focus { /* Needs javascript! */
     border-bottom: 1px solid slategray;
     color: #515a62; /* To ensure it looks like it's active state as the browser loads the next page */
 }
 
-.menu__link:active {
+.nav__link:active {
     border-bottom: 1px solid slategray;
 }
 
-.menu__link--current:link, .menu__link--current:visited {
+.nav__link--current:link, .nav__link--current:visited {
     border-bottom: 1px solid slategray;
     color: #515a62;
 }
 
-#ridgepro-words { /* Making just the "Ridge Pro" bigger than the rest of the menu */
+#ridgepro-words { /* Making just the "Ridge Pro" bigger than the rest of the nav */
     font-size: 60px;
 }
 
-.menu__link--bold { /* Making "Ridge" bold */
+.nav__link--bold { /* Making "Ridge" bold */
     font-weight: 400;
 }
 
-#notmenu { /* Everything that isn't in the fixed menu */
+#content { /* Everything that isn't in the fixed nav */
     width: 97%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 20px;
 }
 
 h1 {
     font-weight: 100;
-    font-size: 70px;
     text-transform: uppercase;
-}
-
-.header--bold {
-    font-weight: 400;
 }
 
 .card {
