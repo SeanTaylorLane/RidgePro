@@ -4,10 +4,11 @@
     box-shadow: 2px 2px 7px;
     background: white;
     margin-bottom: 50px;
+    padding: 7px 10px;
 }
 
 .card__about {
-    height: 30%;
+    height: 60%;
 }
 
 .card__join {
@@ -15,6 +16,6 @@
 }
 
 .card__officers {
-    height: 60%;
+    height: 80%;
     margin-bottom: 0; /* Since this is the last thing before the footer, and I already gave this card a margin-bottom of 30px with all the other cards to save reusing css rules */
 }

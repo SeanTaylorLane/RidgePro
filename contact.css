@@ -1,7 +1,7 @@
-#notmenu { /* Overwrites width of 97% in menu-etc.css to make the card thinner babe */
+#content { /* Overwrites width of 97% in menu-etc.css to make the card thinner babe */
     width: 60%;
 }
 
-.card {
-    height: 50%;
+.content__card {
+    height: 70%;
 }

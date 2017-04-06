@@ -8,39 +8,49 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 </head>
-<body>
+<body onscroll="scrollNav()">
     
+   <header>
+    <a class="header__home" href="index.html"><span class="header--bold">Ridge</span>Pro</a>
+    <ul class="headernav__list">
+        <li class="headernav__item"><a class="headernav__link" href="about.html">About</a></li>
+        <li class="headernav__item"><a class="headernav__link" href="work.html">Work</a></li>
+        <li class="headernav__item"><a class="headernav__link" href="events.html">Events</a></li>
+        <li class="headernav__item"><a class="headernav__link headernav__link--current" href=contact.html>Contact</a></li>
+    </ul>
+    </header>
     
-    <nav class="menu">
-        <ul class="menu__list">
-        <li class="menu__home">
-            <a class="menu__link--home" id="ridgepro-words" href="index.html"><span class="menu__link--bold">Ridge</span>Pro</a>
+    <nav>
+        <ul class="nav__list">
+        <li class="nav__home">
+            <a class="nav__link--home" id="ridgepro-words" href="index.html"><span class="header--bold">Ridge</span>Pro</a>
         </li>
-        <li class="menu__item">
-            <a class="menu__link" href="about.html">About</a>
+        <li class="nav__item">
+            <a class="nav__link" href="about.html">About</a>
         </li>
-        <li class="menu__item">
-            <a class="menu__link" href="work.html">Work</a>
+        <li class="nav__item">
+            <a class="nav__link" href="work.html">Work</a>
         </li>
-        <li class="menu__item">
-            <a class="menu__link" href="events.html">Events</a>
+        <li class="nav__item">
+            <a class="nav__link" href="events.html">Events</a>
         </li>
-        <li class="menu__item">
-            <a class="menu__link menu__link--current" href="contact.html">Contact</a>
+        <li class="nav__item">
+            <a class="nav__link nav__link--current" href="contact.html">Contact</a>
         </li>
         </ul>
-    </nav>z-index <!-- WTF WTF WTF THE MARGIN GOES CRAZY WITHOUT THIS??? -->
+    </nav>
     
-    <div id="notmenu">
+    <div id="content">
     
-    <h1><span class="header--bold">Contact</span>Us</h1>
-    <div class="card"></div>
+    <div class="content__card">
+        <h1><span class="header--bold">Contact</span>Us</h1>
+    </div>
     
         
     <footer>&copy; Ridge Productions 2017</footer>
     
     </div> <!-- </notmenu> -->
     
-    <script src="positionFixed.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>

@@ -8,28 +8,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 </head>
-<body>
-    
-    
-    <nav class="menu">
-        <ul class="menu__list">
-        <li class="menu__home">
-            <a class="menu__link--home" id="ridgepro-words" href="index.html"><span class="menu__link--bold">Ridge</span>Pro</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="about.html">About</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link menu__link--current" href="work.html">Work</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="events.html">Events</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="contact.html">Contact</a>
-        </li>
-        </ul>
-    </nav>z-index <!-- WTF WTF WTF THE MARGIN GOES CRAZY WITHOUT THIS??? -->
+<body onscroll="scrollNav()">
     
     <div id="modal" style="background: rgba(0,0,0,0);"> <!-- Modal container and modal background-->
         <span class="modal__exit" onclick="closeModal()">&times;</span>
@@ -40,11 +19,41 @@
             </div> <!-- </modal__text> -->
     </div> <!-- </modal> -->
     
-    <div id="notmenu">
+   <header>
+    <a class="header__home" href="index.html"><span class="header--bold">Ridge</span>Pro</a>
+    <ul class="headernav__list">
+        <li class="headernav__item"><a class="headernav__link" href="about.html">About</a></li>
+        <li class="headernav__item"><a class="headernav__link headernav__link--current" href="work.html">Work</a></li>
+        <li class="headernav__item"><a class="headernav__link" href="events.html">Events</a></li>
+        <li class="headernav__item"><a class="headernav__link" href=contact.html>Contact</a></li>
+    </ul>
+    </header>
     
+    <nav>
+        <ul class="nav__list">
+        <li class="nav__home">
+            <a class="nav__link--home" id="ridgepro-words" href="index.html"><span class="header--bold">Ridge</span>Pro</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="about.html">About</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link nav__link--current" href="work.html">Work</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="events.html">Events</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="contact.html">Contact</a>
+        </li>
+        </ul>
+    </nav>
+    
+    <div id="content">
+    
+    <div class="content__card">
+        
     <h1><span class="header--bold">Our</span>Work</h1>
-    <div class="card">
-
     <ul class="year">
         <li class="year__item"><a href="#" class="year__link" id="year--current">2017</a></li>
         <li class="year__item"><a href="#" class="year__link">2016</a></li>
@@ -226,7 +235,7 @@
     
     </div> <!-- </notmenu> -->
     
-    <script src="positionFixed.js"></script>
+    <script src="nav.js"></script>
     <script src="workModal.js"></script>
     <script src="jquery-3.2.0.min.js"></script>
     <script src="masonry.pkgd.min.js"></script>

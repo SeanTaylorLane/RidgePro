@@ -62,7 +62,7 @@ header a {
     padding-bottom: 3px;
 }
 
-.headernav__list a:before {
+.headernav__link:before {
     position: absolute;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
@@ -74,8 +74,7 @@ header a {
     background-color: black;
 }
 
-.headernav__list a:hover:before {
-    opacity: 1;
+.headernav__link:hover:before, .headernav__link--current:before {
     width: 100%;
 }
 
@@ -84,7 +83,7 @@ nav {
     background: white;
     padding: 3px 1.5%; /* To center the nav items as 97% width with the rest of the page design */
     position: fixed;
-    top: 0;
+    top: -88px;
     z-index: 10;
     box-shadow: 2px 2px 4px;
     border-bottom-left-radius: 5px;
@@ -93,6 +92,7 @@ nav {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition: top 0.35s ease;
 }
 
 .nav__list {
@@ -158,19 +158,21 @@ nav a {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 20px;
+    margin-top: 35px;
 }
 
-h1 {
-    font-weight: 100;
-    text-transform: uppercase;
-}
-
-.card {
+.content__card {
     width: 100%;
     border-radius: 7px;
     box-shadow: 2px 2px 7px;
     background: white;
-    padding-top: 20px; /* This should be the same on all other pages (besides home page) */
+    padding: 7px 10px; /* This should be the same on all other pages (besides home page) */
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 footer {
