@@ -7,13 +7,18 @@
     font-family: Roboto, sans-serif;
 }
 
-body, html {
+html {
     width: 100%;
     height: 100%;
 }
 
 body {
-    background: #F5F5F5;
+    width: 100%;
+    min-height: 100%; /* To make sure that the body won't be confined to the height of the hmtl element and will adapt to the content on the page (idk why the html element doesn't adapt, maybe because the height is set to a static 100%? idk) */
+    background: linear-gradient(white, #c1c1c1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+/*    background: #F5F5F5;*/
 /*    background: url("pixel_weave.png");*/
 }
 
@@ -80,7 +85,7 @@ header a {
 
 nav {
     width: 100%;
-    background: white;
+    background: linear-gradient(white, rgb(252,252,252));
     padding: 3px 1.5%; /* To center the nav items as 97% width with the rest of the page design */
     position: fixed;
     top: -88px;
