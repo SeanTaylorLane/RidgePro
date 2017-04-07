@@ -87,16 +87,15 @@ ul.year {
 }
 
 .grid-container {
+    width: 1353px;
     margin: 0 auto;
-    width: 1075px;
 }
 
 .grid-sizer {
-    width: 25%;
+    width: 20%;
 }
 
 .masonryImage {
-    width: 25%;
     padding: 10px;
 }
 
@@ -104,10 +103,34 @@ ul.year {
     border-radius: 3px;
     box-shadow: 2px 2px 7px;
     cursor: pointer;
-    opacity: 1;
-    transition: opacity 0.6s;
 }
 
-.masonry img:hover {
-    opacity: 0.8;
+@media only screen and (max-width: 1440px) {
+    .grid-container {
+        width: 1091;
+    }
+    
+    .grid-sizer {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1178px) {
+    .grid-container {
+        width: 816px;
+    }
+    
+    .grid-sizer {
+        width: 33.33333333333%;
+    }
+}
+
+@media only screen and (max-width: 903px) {
+    .grid-container {
+        width: 549px;
+    }
+    
+    .grid-sizer {
+        width: 50%;
+    }
 }
