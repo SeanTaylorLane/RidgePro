@@ -5,6 +5,7 @@
     background: white;
     margin-bottom: 50px;
     padding: 7px 10px;
+    padding-bottom: 30px;
 }
 
 .card__about {
@@ -16,6 +17,59 @@
 }
 
 .card__officers {
-    height: 80%;
+    height: auto;
     margin-bottom: 0; /* Since this is the last thing before the footer, and I already gave this card a margin-bottom of 30px with all the other cards to save reusing css rules */
+}
+
+.officers__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+/*    background: rgba(0,0,0,0.3);*/
+}
+
+.officers__item {
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 50px;
+    text-align: center;
+    width: 40%;
+/*    border: solid 1px black;*/
+    position: relative;
+}
+
+.officers__avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.officers__avatar:hover {
+    box-shadow: 0px 0px 25px black;
+}
+
+span.officers__name {
+    display: block;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 80%;
+    margin-top: 20px;
+}
+
+span.officers--position {
+    font-family: Nunito, sans-serif;
+    font-weight: 300;
+    font-style: oblique;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: dimgray;
+}
+
+.officers__links {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
 }
