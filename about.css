@@ -1,37 +1,37 @@
-.card__about, .card__join, .card__officers {
-    width: 100%;
-    border-radius: 7px;
-    box-shadow: 2px 2px 7px;
-    background: white;
-    margin-bottom: 50px;
-    padding: 7px 10px;
-    padding-bottom: 30px;
+.content__card {
+    margin-bottom: 30px; /* Make sure the margin-bottom of the last card on the page is zero!! */
 }
 
-.card__about {
-    height: 60%;
+.flex-join {
+    justify-content: space-around;
+/*    border: solid 1px rgba(255, 0,0,0.5);*/
 }
 
-.card__join {
-    height: 30%;
+.join__item {
+    width: 400px;
+/*    border: solid 1px rgba(0,0,0,0.5);*/
+}
+
+h2.join {
+    font-size: 30px;
+    margin: 0;
+    color: dimgray;
+    font-style: oblique;
+    text-align: left;
+}
+
+p.join {
+    margin-top: 0;
+    text-indent: initial;
 }
 
 .card__officers {
-    height: auto;
     margin-bottom: 0; /* Since this is the last thing before the footer, and I already gave this card a margin-bottom of 30px with all the other cards to save reusing css rules */
 }
 
-.officers__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-/*    background: rgba(0,0,0,0.3);*/
-}
-
 .officers__item {
+    margin-top: 20px; /* h1 margin and these margins don't collapse b/c these are inside the flex-container */
     border-radius: 8px;
-    padding: 10px;
-    padding-top: 50px;
     text-align: center;
     width: 40%;
 /*    border: solid 1px black;*/
