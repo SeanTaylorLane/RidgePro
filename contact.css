@@ -1,7 +1,87 @@
-#content { /* Overwrites width of 97% in menu-etc.css to make the card thinner babe */
-    width: 60%;
+.content__flex {
+    display: flex;
+    justify-content: center;
 }
 
-.content__card {
-    height: 70%;
+.content__card__contact, .content__card__find {
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px;
+    background: white;
+    padding: 7px 10px; /* This should be the same on all other pages (besides home page) */
+}
+
+.content__card__contact {
+    flex: 2;
+    margin-right: 30px;
+}
+
+.content__card__find {
+    flex: 1;
+}
+
+p {
+    text-indent: initial;
+    margin: 0;
+    font-style: oblique;
+}
+
+h2.oblique {
+    margin: 0;
+    font-size: 30px;
+}
+
+.vertical-center {
+/*    border: 1px solid rgba(0,255,0,0.5);*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+input[type=text], textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 7px;
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    padding: 6px 10px;
+    transition: border 0.35s ease;
+    color: dimgray;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 1px solid black;
+    outline: 0;
+}
+
+
+button {
+    display: block;
+    margin: auto;
+    background: none;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-style: oblique;
+    font-weight: 100;
+    color: black;
+    font-size: 20px;
+    outline: 0;
+    cursor: pointer;
+    transition: color 0.35s ease;
+}
+
+button:hover {
+    color: gray;
 }

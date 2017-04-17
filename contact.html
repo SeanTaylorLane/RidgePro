@@ -7,6 +7,7 @@
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i" rel="stylesheet">
 </head>
 <body onscroll="scrollNav()">
     
@@ -41,15 +42,32 @@
     </nav>
     
     <div id="content">
+    <div class="content__flex">
     
-    <div class="content__card">
+    <div class="content__card__contact">
         <h1><span class="header--bold">Contact</span>Us</h1>
+            <form>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
     </div>
-    
+        
+        <div class="content__card__find">
+            <h1><span class="header--bold">Find</span>Us</h1>
+                    <h2 class="oblique">(We don't bite!)</h2>
+                    <p>Ridge Productions</p>
+                    <p>RidgeVideo@gmail.com</p>
+                    <p>268 S Finley Ave</p>
+                    <p>Basking Ridge, NJ</p>
+        </div>
+        </div>
         
     <footer>&copy; Ridge Productions 2017</footer>
     
-    </div> <!-- </notmenu> -->
+    </div> <!-- </content> -->
     
     <script src="nav.js"></script>
 </body>
