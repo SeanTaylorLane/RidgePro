@@ -142,7 +142,7 @@ h2 {
 
 .row1--about {
     flex: 2; /* To make this 2/3 the size of the container (factoring in margin? idk and idc) */
-    margin-right: 30px; /* Space in between columns is bigger than space between rows. I think it looks cool */
+    margin-right: 1.55%; /* To make the distance between cards the same as the distance between the edge of the page and a card */
 }
 
 .row1--join {
@@ -155,7 +155,7 @@ h2 {
 
 .row3--contact {
     flex: 1;
-    margin-right: 30px;
+    margin-right: 1.55%;
 }
 
 .row3--events {
