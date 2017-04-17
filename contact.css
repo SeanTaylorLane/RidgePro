@@ -17,12 +17,14 @@
 
 .content__card__find {
     flex: 1;
+    position: relative;
 }
 
 p {
     text-indent: initial;
     margin: 0;
     font-style: oblique;
+    text-align: center;
 }
 
 h2.oblique {
@@ -30,10 +32,10 @@ h2.oblique {
     font-size: 30px;
 }
 
-.vertical-center {
+.vert-center {
 /*    border: 1px solid rgba(0,255,0,0.5);*/
     position: relative;
-    top: 50%;
+    top: 154px;
     transform: translateY(-50%);
 }
 
@@ -50,9 +52,10 @@ input[type=text], textarea {
     border-radius: 5px;
     font-family: Roboto, sans-serif;
     font-size: 20px;
+    font-weight: 100;
     padding: 6px 10px;
     transition: border 0.35s ease;
-    color: dimgray;
+    color: black;
 }
 
 textarea {
@@ -62,7 +65,7 @@ textarea {
 }
 
 input[type=text]:focus, textarea:focus {
-    border: 1px solid black;
+    border: 1px solid dimgray;
     outline: 0;
 }
 
