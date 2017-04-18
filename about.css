@@ -26,6 +26,40 @@ p.join {
     text-align: justify;
 }
 
+@media only screen and (max-width:1400px) {
+    .join__item {
+        width: 350px;
+    }
+    
+    p.join {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .join__item {
+        width: 320px;
+    }
+    
+    h2.join {
+        font-size: 26px;
+    }
+    
+    p.join {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1115px) {
+    .join__item {
+        width: 290px;
+    }
+    
+    p.join {
+        font-size: 16px;
+    }
+}
+
 .card__officers {
     margin-bottom: 0; /* Since this is the last thing before the footer, and I already gave this card a margin-bottom of 30px with all the other cards to save reusing css rules */
 }
