@@ -252,7 +252,26 @@ a.link:after {
 
 footer {
     color: dimgray;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+footer .fa {
+    color: dimgray;
+    margin: 0 30px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    font-size: 40px;
+}
+
+footer .fa:hover {
+    color: black;
+}
+
+span.copy {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
     font-size: 16px;
     line-height: .5;
-    margin-top: 20px;
 }

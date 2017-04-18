@@ -23,6 +23,7 @@ h2.join {
 p.join {
     margin-top: 0;
     text-indent: initial;
+    text-align: justify;
 }
 
 .card__officers {
@@ -45,6 +46,7 @@ p.join {
     display: block;
     margin: 0 auto;
     cursor: pointer;
+    transition: box-shadow 0.35s ease;
 }
 
 .officers__avatar:hover {
