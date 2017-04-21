@@ -72,7 +72,7 @@
         <h1 style="margin-bottom: 0"><span class="header--bold">Executive</span>Members</h1>
         <div class="flex-container">
         <div class="officers__item">
-            <img src="avatar.jpg" class="officers__avatar">
+            <img src="avatar.jpg" onclick="showModal(0)" class="officers__avatar" alt="Shaheer Rizwan">
             <span class="officers__name">Shaheer Rizwan</span>
             <span class="officers--position">President</span>
             <br>
@@ -80,31 +80,39 @@
             <a href="http://www.google.com/" target="_blank"><img src="website.svg" class="officers__links" style="transform: scale(1.25, 1)"></a>
         </div>
         <div class="officers__item">
-            <img src="avatar.jpg" class="officers__avatar">
+            <img src="avatar.jpg" onclick="showModal(1)" class="officers__avatar" alt="Michelle Singer">
             <span class="officers__name">Michelle Singer</span>
             <span class="officers--position">Vice-President</span>
             <br>
             <a href="http://www.google.com/" target="_blank"><img src="email.svg" class="officers__links" style="width:26.66666px"></a>
             <a href="http://www.google.com/" target="_blank"><img src="website.svg" class="officers__links" style="transform: scale(1.25, 1)"></a>
         </div>
-       <div class="officers__item" style="margin-top:50px">
-           <img src="avatar.jpg" class="officers__avatar">
-            <span class="officers__name">Eric Manaravic</span>
-            <span class="officers--position">Secretary &amp; Graphic Designer</span>
+       <div class="officers__item">
+           <img src="avatar.jpg" onclick="showModal(2)" class="officers__avatar" alt="Johanna Cordasco">
+            <span class="officers__name">Johanna Cordasco</span>
+            <span class="officers--position">Secretary</span>
             <br>
             <a href="http://www.google.com/" target="_blank"><img src="email.svg" class="officers__links" style="width:26.66666px"></a>
             <a href="http://www.google.com/" target="_blank"><img src="website.svg" class="officers__links" style="transform: scale(1.25, 1)"></a>
         </div>
        <div class="officers__item" style="margin-top: 50px">
-           <img src="avatar.jpg" class="officers__avatar">
-            <span class="officers__name">Sean Lane</span>
+           <img src="avatar.jpg" onclick="showModal(3)" class="officers__avatar" alt="Eric Maneravic">
+            <span class="officers__name">Eric Maneravic</span>
+            <span class="officers--position">Graphic Designer</span>
+            <br>
+            <a href="http://www.google.com/" target="_blank"><img src="email.svg" class="officers__links" style="width:26.66666px"></a>
+            <a href="http://www.google.com/" target="_blank"><img src="website.svg" class="officers__links" style="transform: scale(1.25, 1)"></a>
+        </div>
+        <div class="officers__item" style="margin-top: 50px">
+           <img src="avatar.jpg" onclick="showModal(4)" class="officers__avatar" alt="Sean Lane">
+            <span class="officers__name">Sean lane</span>
             <span class="officers--position">Webmaster</span>
             <br>
             <a href="http://www.google.com/" target="_blank"><img src="email.svg" class="officers__links" style="width:26.66666px"></a>
             <a href="http://www.google.com/" target="_blank"><img src="website.svg" class="officers__links" style="transform: scale(1.25, 1)"></a>
         </div>
         <div class="officers__item" style="margin-top: 50px">
-           <img src="avatar.jpg" class="officers__avatar">
+           <img src="avatar.jpg" onclick="showModal(5)" class="officers__avatar" alt="Nick Dobry">
             <span class="officers__name">Nick Dobry</span>
             <span class="officers--position">Cinematographer</span>
             <br>
@@ -113,7 +121,7 @@
         </div>
        
         </div>
-    </div>
+        </div> <!-- </card__officers> -->
     
         
     <footer>
@@ -127,6 +135,18 @@
     
     </div> <!-- </content> -->
     
+    <div id="modal" style="background: rgba(0,0,0,0);"> <!-- Modal container and modal background-->
+        <span class="modal__exit" onclick="closeModal()">&times;</span>
+        <img id="modal__image" src="">
+            <div class="modal__text">
+                <h2 id="modal__header"></h2>
+                <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- </modal__text> -->
+    </div> <!-- </modal> -->
+    
+    
     <script src="nav.js"></script>
+    <script src="aboutModal.js"></script>
+    
 </body>
 </html>

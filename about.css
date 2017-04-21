@@ -68,7 +68,7 @@ p.join {
     margin-top: 20px; /* h1 margin and these margins don't collapse b/c these are inside the flex-container */
     border-radius: 8px;
     text-align: center;
-    width: 40%;
+    width: 30%;
 /*    border: solid 1px black;*/
     position: relative;
 }
@@ -108,4 +108,9 @@ span.officers--position {
     width: 20px;
     height: 20px;
     margin: 5px;
+}
+
+#modal__image {
+    width: 22vw;
+    height: 22vw;
 }
