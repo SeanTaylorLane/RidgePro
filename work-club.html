@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link href="menu-etc.css" rel="stylesheet" type="text/css">
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="events.css" rel="stylesheet" type="text/css">
     <title>Ridge Pro</title>
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body onscroll="scrollNav()">
+    
     <header>
     <a class="header__home" href="index.html"><span class="header--bold">Ridge</span>Pro</a>
     <ul class="headernav__list">
@@ -47,52 +48,13 @@
     
     <div id="content">
     
-    <div id="slide-container"> <!-- This is the slider window. This window can be set to any size. Contains the full 300% width slideshow and the nav buttons -->
-    
-    <div id="slide-span"> <!-- The full 300% width slideshow -->
-    <div class="slide slide-1">
-        <h2>Slide One!</h2>
-    </div>
-    <div class="slide slide-2">
-        <h2>Slide Two!</h2>
-    </div>
-    <div class="slide slide-3">
-        <h2>Slide Three!</h2>
-    </div>
-    </div> <!-- </slide-span> -->
-        
-    <span id="slide-left" onclick="changeSlide(99)">&#10094</span>
-    <span id="slide-right" onclick="changeSlide(100)">&#10095</span>
-        
-    <div id="slide-nav-span"> <!-- Container for the nav buttons -->
-    <div class="slide-nav" onclick="changeSlide(0)"></div>
-    <div class="slide-nav" onclick="changeSlide(1)"></div>
-    <div class="slide-nav" onclick="changeSlide(2)"></div>
-    </div>
-    
-    </div> <!-- </slide-container> -->
-    
-    <!-- Row 1 -->
-    <div class="flex-container--medium">
-        <div class="row1--about">
-        </div>
-        <div class="row1--join">
-        </div>
-    </div>
+    <div class="content__card">
+    <h1><span class="header--bold">Our</span>Projects</h1>
+    <h2 class="oblique">Under Construction</h2>
 
-    <!-- Row 2 -->
-    <div class="flex-container--large">
-        <div class="row2--work">
-        </div>
-    </div>
-
-    <!-- Row 3 -->
-    <div class="flex-container--medium">
-        <div class="row3--contact">
-        </div>
-        <div class="row3--events">
-        </div>
-    </div>
+    
+    </div> <!-- </content__card> -->
+    
         
 <footer>
     <div class="flex-container">
@@ -101,11 +63,10 @@
         <a href="https://www.youtube.com/channel/UCd8jO7n8Jqe3HQUhL6Ol8tw" target="_blank"><i class="fa fa-youtube"></i></a>
     </div>
         <span class="copy">&copy; Ridge Productions 2017</span>
-    </footer>    
+    </footer>
+        
     </div> <!-- </content> -->
     
-    
-    <script src="slideySlideshow.js"></script>
     <script src="nav.js"></script>
 </body>
 </html>
