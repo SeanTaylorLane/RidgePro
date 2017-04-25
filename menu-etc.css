@@ -46,10 +46,12 @@ header {
     margin-top: 20px;
 }
 
+li {
+    position: relative; /* For the drop down being position absolute and needing to be 100% of the width of the li items */
+}
+
 .headernav__item {
-    display: inline-block;
-    list-style: outside none none; /* Should look into this and start using! */
-/*    border: solid 1px rgba(0,0,0,0.5);*/
+    list-style: outside none none; /* Should look into this and start using!*/
 }
 
 header a {
@@ -62,12 +64,13 @@ header a {
     color: black;
 } /* Not sure if necessary but probably best practice to apply link unstyling to :link and :visted pseudo elements */
     
-.headernav__link {
+.headernav__link, .headernav__link--dropdown {
     position: relative;
     padding-bottom: 3px;
+    cursor: pointer;
 }
 
-.headernav__link:before {
+.headernav__link:before, .headernav__link--dropdown:before {
     position: absolute;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
@@ -79,8 +82,50 @@ header a {
     background-color: black;
 }
 
-.headernav__link:hover:before, .headernav__link--current:before {
+.headernav__link:hover:before, .headernav__item:hover .headernav__link--dropdown:before, .headernav__link--current:before {
     width: 100%;
+}
+
+.headernav__item:hover .headernav__dropdown {
+    display: block;
+}
+
+.headernav__dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: rgb(252,252,252);
+    z-index: 9;
+    margin-top: 3px;
+    transition: all 0.35s ease;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 2px 2px 8px;
+    animation: dropdownHeader 0.35s;
+}
+
+@keyframes dropdownHeader {
+    from {
+        opacity: 0;
+        margin-left: -10px;
+    }
+    
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+.headernav__dropdown__item {
+    font-size: 25px;
+    text-align: center;
+    line-height: 2;
+    background: transparent;
+    transition: background 0.35s ease;
+}
+
+.headernav__dropdown__item:hover {
+    background: rgba(0,0,0,0.08);
 }
 
 nav {
@@ -128,16 +173,16 @@ nav a {
     color: black;
 }
 
-.nav__link:visited, .nav__link--home:visited {
+.nav__link:visited, .nav__link--home:visited, nav__link--dropdown:visited {
     text-decoration: none;
     color: black;
 }
 
-.nav__link {
+.nav__link, .nav__link--dropdown {
     position: relative;
 }
 
-.nav__link:before {
+.nav__link:before, .nav__link--dropdown:before {
     position: absolute;
     bottom: 0;
     display: block;
@@ -149,8 +194,49 @@ nav a {
     transition: all 0.35s ease;
 }
 
-.nav__link:hover:before, .nav__link--current:before {
+.nav__link:hover:before, .nav__link--current:before, .nav__item:hover .nav__link--dropdown:before {
     width: 100%;
+}
+
+.nav__item:hover .nav__dropdown {
+    display: block;
+}
+
+.nav__dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: rgb(252,252,252);
+    z-index: 9;
+    transition: all 0.35s ease;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 2px 2px 8px;
+    animation: dropdownNav 0.35s;
+}
+
+@keyframes dropdownNav {
+    from {
+        opacity: 0;
+        margin-left: -10px;
+    }
+    
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+.nav__dropdown__item {
+    font-size: 22px;
+    text-align: center;
+    line-height: 2;
+    background: transparent;
+    transition: background 0.35s ease;
+}
+
+.nav__dropdown__item:hover {
+    background: rgba(0,0,0,0.08);
 }
 
 #ridgepro-words { /* Making just the "Ridge Pro" bigger than the rest of the nav */
