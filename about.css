@@ -8,8 +8,8 @@
 }
 
 .join__item {
-    width: 400px;
-/*    border: solid 1px rgba(0,0,0,0.5);*/
+    width: 100%;
+    padding: 7px 5px; /* To be the same distance away from the edges of the content card as the about us section and to make more vertical spacing*/
 }
 
 h2.join {
@@ -23,9 +23,62 @@ h2.join {
 p.join {
     margin-top: 0;
     text-indent: initial;
-    text-align: justify;
 }
 
+
+.card__officers {
+    margin-bottom: 0; /* Since this is the last thing before the footer, and I already gave this card a margin-bottom of 30px with all the other cards to save reusing css rules */
+}
+
+.officers__item {
+    margin-top: 20px; /* h1 margin and these margins don't collapse b/c these are inside the flex-container */
+    text-align: center;
+    width: 100%;
+/*    border: solid 1px black;*/
+    position: relative;
+}
+
+.officers__avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+span.officers__name {
+    display: block;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 80%;
+    margin-top: 20px;
+}
+
+span.officers--position {
+    font-family: Nunito, sans-serif;
+    font-weight: 300;
+    font-style: oblique;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: dimgray;
+}
+
+.officers__links {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+#modal__image {
+    width: 200px;
+    height: 200px;
+}
+
+#modal__desc {
+    padding: 0 11px;
+}
+
+/*
 @media only screen and (max-width:1400px) {
     .join__item {
         width: 350px;
@@ -59,58 +112,31 @@ p.join {
         font-size: 16px;
     }
 }
+*/
 
-.card__officers {
-    margin-bottom: 0; /* Since this is the last thing before the footer, and I already gave this card a margin-bottom of 30px with all the other cards to save reusing css rules */
-}
-
-.officers__item {
-    margin-top: 20px; /* h1 margin and these margins don't collapse b/c these are inside the flex-container */
-    border-radius: 8px;
-    text-align: center;
-    width: 30%;
-/*    border: solid 1px black;*/
-    position: relative;
-}
-
-.officers__avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: box-shadow 0.35s ease;
-}
-
-.officers__avatar:hover {
-    box-shadow: 0px 0px 25px black;
-}
-
-span.officers__name {
-    display: block;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 80%;
-    margin-top: 20px;
-}
-
-span.officers--position {
-    font-family: Nunito, sans-serif;
-    font-weight: 300;
-    font-style: oblique;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: dimgray;
-}
-
-.officers__links {
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-}
-
-#modal__image {
-    width: 22vw;
-    height: 22vw;
+@media only screen and (min-width: 690px) {
+    .join__item {
+        width: 400px;
+        text-align: justify;
+    }
+    
+    .officers__item {
+        width: 30%;
+    }
+    
+    .officers__avatar {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        transition: box-shadow 0.35s ease;
+    }
+    
+    .officers__avatar:hover {
+        box-shadow: 0px 0px 25px black;
+    }
+    
+    #modal__image {
+        width: 22vw;
+        height: 22vw;
+    }
 }
