@@ -21,3 +21,29 @@ function scrollNav() {
     }
 //    console.log(nav.style.top);
 }
+
+var mobileNavOpen = false;
+function mobileNav() {
+    var mobileNav = document.getElementById("mobilenav");
+    var navItems = document.getElementsByClassName("mobilenav__item");
+    var navArrow = document.getElementsByClassName("fa-chevron-down")[0];
+    
+    if (mobileNavOpen) {
+        mobileNav.style.top = "-351px";
+        navArrow.style.transform = "rotateX(0deg)";
+        mobileNav.style.justifyContent = "flex-end";
+        setTimeout(function() {
+            for (i=0;i<navItems.length;i++) {
+            navItems[i].style.display = "none";
+        }}, 450);
+        mobileNavOpen = false;
+    } else {
+        mobileNav.style.top = "0";
+        navArrow.style.transform = "rotateX(180deg)";
+        mobileNav.style.justifyContent = "space-around";
+        for (i=0;i<navItems.length;i++) {
+            navItems[i].style.display = "block";
+        }
+        mobileNavOpen = true;
+    }
+}
