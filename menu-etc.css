@@ -224,7 +224,6 @@ span.copy {
     color: white;
     font-size: 40px;
     transition: top 0.45s ease;
-/*    box-shadow: 0 -2px 7px;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -302,6 +301,10 @@ span.copy {
 }
 
 @media only screen and (min-width: 690px) {
+    header {
+        display: block;
+    }
+    
     .header__home {
         font-size: 140px;
     }
@@ -322,7 +325,7 @@ span.copy {
         list-style: outside none none; /* Should look into this and start using!*/
     }
     
-        .headernav__link:link, .headernav__link:visited {
+    .headernav__link:link, .headernav__link:visited {
         text-decoration: none;
         color: black;
     } /* Not sure if necessary but probably best practice to apply link unstyling to :link and :visted pseudo elements */
@@ -392,6 +395,7 @@ span.copy {
     }
     
     nav {
+        display: block;
         width: 100%;
         background: linear-gradient(white, rgb(252,252,252));
         padding: 3px 1.5%; /* To center the nav items as 97% width with the rest of the page design */
