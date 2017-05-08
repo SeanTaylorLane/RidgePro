@@ -455,7 +455,7 @@ span.copy {
         display: block;
         content: "";
         width: 0%;
-        height: 2px;
+        height: 1px;
         background-color: black;
         -webkit-transition: all 0.35s ease;
         transition: all 0.35s ease;
@@ -595,4 +595,7 @@ span.copy {
     .nav__dropdown__item {
         font-size: 21px;
     }
+    
+    .nav__link:before, .nav__link--dropdown:before {
+        height: 2px;
 }
