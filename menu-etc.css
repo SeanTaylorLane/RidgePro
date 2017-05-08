@@ -383,7 +383,7 @@ span.copy {
     }
 
     .headernav__dropdown__item {
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         line-height: 2;
         background: transparent;
@@ -495,7 +495,7 @@ span.copy {
     }
 
     .nav__dropdown__item {
-        font-size: 22px;
+        font-size: 14px;
         text-align: center;
         line-height: 2;
         background: transparent;
@@ -542,6 +542,10 @@ span.copy {
         font-size: 36px;
     }
     
+    .headernav__dropdown__item {
+        font-size: 22px;
+    }
+    
     .header__home {
         font-size: 120px;
     }
@@ -550,12 +554,20 @@ span.copy {
         font-size: 50px;
     }
     
+    .nav__dropdown__item {
+        font-size: 15px;
+    }
+    
 }
 
 @media only screen and (min-width: 870px) {
     
     header {
         font-size: 40px;
+    }
+    
+    .headernav__dropdown__item {
+        font-size: 25px;
     }
     
     .header__home {
@@ -569,10 +581,18 @@ span.copy {
     .nav__item {
         font-size: 30px;
     }
+    
+    .nav__dropdown__item {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (min-width: 1050px) {
     .nav__item {
         font-size: 35px;
+    }
+    
+    .nav__dropdown__item {
+        font-size: 21px;
     }
 }
