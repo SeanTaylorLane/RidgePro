@@ -412,7 +412,7 @@ span.copy {
         transition: top 0.35s ease;
     }
     
-        .nav__list {
+    .nav__list {
         display: -webkit-flex;
         display: flex;
         justify-content: space-between;
@@ -422,10 +422,10 @@ span.copy {
 
     .nav__item { /* All the nav items besides "Ridge Pro" */
         margin-right: 30px;
-        font-size: 35px;
         font-weight: 100;
         text-transform: uppercase;
         cursor: pointer;
+        font-size: 25px;
     }
 
     .nav__home { /* (the RidgePro logo) */
@@ -507,7 +507,7 @@ span.copy {
     }
 
     #ridgepro-words { /* Making just the "Ridge Pro" bigger than the rest of the nav */
-        font-size: 60px;
+        font-size: 40px;
     }
     
     #content {
@@ -546,6 +546,10 @@ span.copy {
         font-size: 120px;
     }
     
+    #ridgepro-words {
+        font-size: 50px;
+    }
+    
 }
 
 @media only screen and (min-width: 870px) {
@@ -556,5 +560,19 @@ span.copy {
     
     .header__home {
         font-size: 140px;
+    }
+    
+    #ridgepro-words {
+        font-size: 60px;
+    }
+    
+    .nav__item {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .nav__item {
+        font-size: 35px;
     }
 }
